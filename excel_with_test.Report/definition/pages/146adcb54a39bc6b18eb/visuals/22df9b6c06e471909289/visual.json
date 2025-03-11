@@ -1,0 +1,75 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.5.0/schema.json",
+  "name": "22df9b6c06e471909289",
+  "position": {
+    "x": 489.24444444444447,
+    "y": 190.57777777777778,
+    "z": 0,
+    "height": 280.17777777777781,
+    "width": 381.15555555555557,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "sales_data_sample"
+                    }
+                  },
+                  "Property": "STATE"
+                }
+              },
+              "queryRef": "sales_data_sample.STATE",
+              "nativeQueryRef": "STATE"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "sales_data_sample"
+                        }
+                      },
+                      "Property": "SALES"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(sales_data_sample.SALES)",
+              "nativeQueryRef": "Sum of SALES"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "columnWidth": [
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "224.37777777777777D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "sales_data_sample.STATE"
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

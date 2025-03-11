@@ -1,0 +1,5 @@
+relationship c7d723d0-ce62-412d-9e3e-7074351f547f
+	joinOnDateBehavior: datePartOnly
+	fromColumn: sales_data_sample.ORDERDATE
+	toColumn: LocalDateTable_71a209ff-1b17-4320-b3db-90e5442ca32b.Date
+

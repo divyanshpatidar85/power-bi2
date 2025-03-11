@@ -1,0 +1,232 @@
+table sales_data_sample
+	lineageTag: 08003b48-5e60-4a88-a1c2-843f204e0079
+
+	column ORDERNUMBER
+		dataType: int64
+		formatString: 0
+		lineageTag: 37008e70-e7ec-46b1-b836-7b6237bc5051
+		summarizeBy: sum
+		sourceColumn: ORDERNUMBER
+
+		annotation SummarizationSetBy = Automatic
+
+	column QUANTITYORDERED
+		dataType: int64
+		formatString: 0
+		lineageTag: 92834ac8-43ba-41d6-90ae-cdf94a0352ba
+		summarizeBy: sum
+		sourceColumn: QUANTITYORDERED
+
+		annotation SummarizationSetBy = Automatic
+
+	column PRICEEACH
+		dataType: double
+		lineageTag: 8318dbf7-641f-4064-b45f-cdb48fe20d80
+		summarizeBy: sum
+		sourceColumn: PRICEEACH
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column ORDERLINENUMBER
+		dataType: int64
+		formatString: 0
+		lineageTag: 959adad4-be52-4a55-b323-db1ecec6fa04
+		summarizeBy: sum
+		sourceColumn: ORDERLINENUMBER
+
+		annotation SummarizationSetBy = Automatic
+
+	column SALES
+		dataType: double
+		lineageTag: adb561b1-64ca-4950-92ee-aa9c3cdb5c33
+		summarizeBy: sum
+		sourceColumn: SALES
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column ORDERDATE
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 22b879d6-07ba-4818-b63f-b3757a04ed99
+		summarizeBy: none
+		sourceColumn: ORDERDATE
+
+		variation Variation
+			isDefault
+			relationship: c7d723d0-ce62-412d-9e3e-7074351f547f
+			defaultHierarchy: LocalDateTable_71a209ff-1b17-4320-b3db-90e5442ca32b.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column STATUS
+		dataType: string
+		lineageTag: 510ccdaa-6f05-4207-9291-16aa4e44a82e
+		summarizeBy: none
+		sourceColumn: STATUS
+
+		annotation SummarizationSetBy = Automatic
+
+	column QTR_ID
+		dataType: int64
+		formatString: 0
+		lineageTag: c3ab0df6-15c1-4b40-bbf4-574c6fc578a0
+		summarizeBy: count
+		sourceColumn: QTR_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column MONTH_ID
+		dataType: int64
+		formatString: 0
+		lineageTag: 2068d507-4741-4de0-a8e8-2966388ff7e9
+		summarizeBy: count
+		sourceColumn: MONTH_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column YEAR_ID
+		dataType: int64
+		formatString: 0
+		lineageTag: 0420a333-5c99-4e71-9ab7-7cdd08d902c2
+		summarizeBy: count
+		sourceColumn: YEAR_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column PRODUCTLINE
+		dataType: string
+		lineageTag: 4cc6d7a2-9309-478e-b3b9-81c83ae59aa1
+		summarizeBy: none
+		sourceColumn: PRODUCTLINE
+
+		annotation SummarizationSetBy = Automatic
+
+	column MSRP
+		dataType: int64
+		formatString: 0
+		lineageTag: 18e5c4e7-5b6d-4be8-99b7-de4dc2a1cab4
+		summarizeBy: sum
+		sourceColumn: MSRP
+
+		annotation SummarizationSetBy = Automatic
+
+	column PRODUCTCODE
+		dataType: string
+		lineageTag: 474e1759-6420-49e7-a30d-09750851668b
+		summarizeBy: none
+		sourceColumn: PRODUCTCODE
+
+		annotation SummarizationSetBy = Automatic
+
+	column CUSTOMERNAME
+		dataType: string
+		lineageTag: 72d3d7a5-09b5-4920-b745-d9bfe8c15bd7
+		summarizeBy: none
+		sourceColumn: CUSTOMERNAME
+
+		annotation SummarizationSetBy = Automatic
+
+	column PHONE
+		dataType: string
+		lineageTag: c1cdeed9-6922-4d8b-aef6-f87ca0b54946
+		summarizeBy: none
+		sourceColumn: PHONE
+
+		annotation SummarizationSetBy = Automatic
+
+	column ADDRESSLINE1
+		dataType: string
+		lineageTag: f29ccaf2-a3a8-4cc5-a116-567c17c2cfa9
+		summarizeBy: none
+		sourceColumn: ADDRESSLINE1
+
+		annotation SummarizationSetBy = Automatic
+
+	column ADDRESSLINE2
+		dataType: string
+		lineageTag: 1f6c26f5-9983-4d0a-90e9-795bea3afaee
+		summarizeBy: none
+		sourceColumn: ADDRESSLINE2
+
+		annotation SummarizationSetBy = Automatic
+
+	column CITY
+		dataType: string
+		lineageTag: 672d2b11-51d8-4b77-82fa-033528cd9c73
+		summarizeBy: none
+		sourceColumn: CITY
+
+		annotation SummarizationSetBy = Automatic
+
+	column STATE
+		dataType: string
+		lineageTag: f23b7709-d908-40ce-87b9-a0afb2fc7890
+		summarizeBy: none
+		sourceColumn: STATE
+
+		annotation SummarizationSetBy = Automatic
+
+	column POSTALCODE
+		dataType: string
+		lineageTag: a7c10881-7156-4dc1-9635-4f4a95a890bd
+		summarizeBy: none
+		sourceColumn: POSTALCODE
+
+		annotation SummarizationSetBy = Automatic
+
+	column COUNTRY
+		dataType: string
+		lineageTag: 1d6edd6b-3a96-4b36-b9df-3abb3701ac40
+		summarizeBy: none
+		sourceColumn: COUNTRY
+
+		annotation SummarizationSetBy = Automatic
+
+	column TERRITORY
+		dataType: string
+		lineageTag: 4962d555-f32a-4c7b-b138-e6e2d5335591
+		summarizeBy: none
+		sourceColumn: TERRITORY
+
+		annotation SummarizationSetBy = Automatic
+
+	column CONTACTLASTNAME
+		dataType: string
+		lineageTag: b0d2a56f-6de8-43dc-b072-c1230c0a6cb8
+		summarizeBy: none
+		sourceColumn: CONTACTLASTNAME
+
+		annotation SummarizationSetBy = Automatic
+
+	column CONTACTFIRSTNAME
+		dataType: string
+		lineageTag: 22e29715-d53d-414d-a06d-d26253d35da2
+		summarizeBy: none
+		sourceColumn: CONTACTFIRSTNAME
+
+		annotation SummarizationSetBy = Automatic
+
+	column DEALSIZE
+		dataType: string
+		lineageTag: b1329e71-8f81-4914-9d32-7a56b35c41cb
+		summarizeBy: none
+		sourceColumn: DEALSIZE
+
+		annotation SummarizationSetBy = Automatic
+
+	partition sales_data_sample = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents("E:\Addend Analytics\sales dataset\sales_data_sample.csv"),[Delimiter=",", Columns=25, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"ORDERNUMBER", Int64.Type}, {"QUANTITYORDERED", Int64.Type}, {"PRICEEACH", type number}, {"ORDERLINENUMBER", Int64.Type}, {"SALES", type number}, {"ORDERDATE", type datetime}, {"STATUS", type text}, {"QTR_ID", Int64.Type}, {"MONTH_ID", Int64.Type}, {"YEAR_ID", Int64.Type}, {"PRODUCTLINE", type text}, {"MSRP", Int64.Type}, {"PRODUCTCODE", type text}, {"CUSTOMERNAME", type text}, {"PHONE", type text}, {"ADDRESSLINE1", type text}, {"ADDRESSLINE2", type text}, {"CITY", type text}, {"STATE", type text}, {"POSTALCODE", type text}, {"COUNTRY", type text}, {"TERRITORY", type text}, {"CONTACTLASTNAME", type text}, {"CONTACTFIRSTNAME", type text}, {"DEALSIZE", type text}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table
+
