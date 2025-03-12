@@ -1,0 +1,43 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.5.0/schema.json",
+  "name": "65f915a596da4ee30d85",
+  "position": {
+    "x": 455.11111111111109,
+    "y": 41.244444444444447,
+    "z": 1,
+    "height": 278.75555555555553,
+    "width": 759.4666666666667,
+    "tabOrder": 1
+  },
+  "visual": {
+    "visualType": "card",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "divyanshpatidar85"
+                        }
+                      },
+                      "Property": "company"
+                    }
+                  },
+                  "Function": 3
+                }
+              },
+              "queryRef": "Min(divyanshpatidar85.company)",
+              "nativeQueryRef": "First company"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

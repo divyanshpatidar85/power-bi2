@@ -1,0 +1,299 @@
+table divyanshpatidar85
+	lineageTag: c834c64b-d430-45e9-a543-289472e67d98
+
+	column login
+		dataType: string
+		lineageTag: a2ad40bc-2b03-4c8f-a8c2-b0f8b287129f
+		summarizeBy: none
+		sourceColumn: login
+
+		annotation SummarizationSetBy = Automatic
+
+	column id
+		dataType: int64
+		formatString: 0
+		lineageTag: efa48470-33bc-4da0-a908-00193f54331b
+		summarizeBy: sum
+		sourceColumn: id
+
+		annotation SummarizationSetBy = Automatic
+
+	column node_id
+		dataType: string
+		lineageTag: 03689b9e-17af-45c3-a4b1-30840f944b93
+		summarizeBy: none
+		sourceColumn: node_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column avatar_url
+		dataType: string
+		lineageTag: 4f5f7f18-7d56-4314-8661-6beb9390725b
+		summarizeBy: none
+		sourceColumn: avatar_url
+
+		annotation SummarizationSetBy = Automatic
+
+	column gravatar_id
+		dataType: string
+		lineageTag: dda56b15-95c1-4c31-ba05-070b33c01b53
+		summarizeBy: none
+		sourceColumn: gravatar_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column url
+		dataType: string
+		lineageTag: a7176a4b-0bd0-4c98-9407-597401569277
+		summarizeBy: none
+		sourceColumn: url
+
+		annotation SummarizationSetBy = Automatic
+
+	column html_url
+		dataType: string
+		lineageTag: a365922e-483e-431b-ab61-1ac498959bf3
+		summarizeBy: none
+		sourceColumn: html_url
+
+		annotation SummarizationSetBy = Automatic
+
+	column followers_url
+		dataType: string
+		lineageTag: 643fefc7-6207-4df9-8144-dc6f2873a84b
+		summarizeBy: none
+		sourceColumn: followers_url
+
+		annotation SummarizationSetBy = Automatic
+
+	column following_url
+		dataType: string
+		lineageTag: 46e04767-5ac3-4b24-8587-53fe83fd20e5
+		summarizeBy: none
+		sourceColumn: following_url
+
+		annotation SummarizationSetBy = Automatic
+
+	column gists_url
+		dataType: string
+		lineageTag: 320fd48c-5d29-4028-9ef4-eb8ec38b34ae
+		summarizeBy: none
+		sourceColumn: gists_url
+
+		annotation SummarizationSetBy = Automatic
+
+	column starred_url
+		dataType: string
+		lineageTag: dfb79769-8f26-4310-9641-ab1b401d6210
+		summarizeBy: none
+		sourceColumn: starred_url
+
+		annotation SummarizationSetBy = Automatic
+
+	column subscriptions_url
+		dataType: string
+		lineageTag: fd326579-5fbe-489b-8a4d-b92ca1eb2ef7
+		summarizeBy: none
+		sourceColumn: subscriptions_url
+
+		annotation SummarizationSetBy = Automatic
+
+	column organizations_url
+		dataType: string
+		lineageTag: 17a6600f-b232-4a87-b456-7f8adec15629
+		summarizeBy: none
+		sourceColumn: organizations_url
+
+		annotation SummarizationSetBy = Automatic
+
+	column repos_url
+		dataType: string
+		lineageTag: e8e40e09-f0bf-4ca3-a3dd-9727f2d87b9f
+		summarizeBy: none
+		sourceColumn: repos_url
+
+		annotation SummarizationSetBy = Automatic
+
+	column events_url
+		dataType: string
+		lineageTag: 1ded9d33-ccd3-4cda-ac44-c74f90a5fe3e
+		summarizeBy: none
+		sourceColumn: events_url
+
+		annotation SummarizationSetBy = Automatic
+
+	column received_events_url
+		dataType: string
+		lineageTag: d3c84b52-717b-4cf8-8103-0eebbb699770
+		summarizeBy: none
+		sourceColumn: received_events_url
+
+		annotation SummarizationSetBy = Automatic
+
+	column type
+		dataType: string
+		lineageTag: c504a271-f803-4024-9309-6340d18ec398
+		summarizeBy: none
+		sourceColumn: type
+
+		annotation SummarizationSetBy = Automatic
+
+	column user_view_type
+		dataType: string
+		lineageTag: f5e9dc89-dd54-4860-a043-fdfaeae3ebb6
+		summarizeBy: none
+		sourceColumn: user_view_type
+
+		annotation SummarizationSetBy = Automatic
+
+	column site_admin
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: d48140ec-93b5-41dd-af09-ff3bde77cfa8
+		summarizeBy: none
+		sourceColumn: site_admin
+
+		annotation SummarizationSetBy = Automatic
+
+	column name
+		dataType: string
+		lineageTag: 1cafaf22-a38f-4187-9e8b-785a913d91bf
+		summarizeBy: none
+		sourceColumn: name
+
+		annotation SummarizationSetBy = Automatic
+
+	column company
+		dataType: string
+		lineageTag: 47b3ed8f-48e8-4b50-aab8-641352c9d7a5
+		summarizeBy: none
+		sourceColumn: company
+
+		annotation SummarizationSetBy = Automatic
+
+	column blog
+		dataType: string
+		lineageTag: b72e27c4-3b2c-4588-b3a0-1c634447e959
+		summarizeBy: none
+		sourceColumn: blog
+
+		annotation SummarizationSetBy = Automatic
+
+	column location
+		dataType: string
+		lineageTag: ea0f6b56-0a67-42bc-8125-897764ee4d14
+		summarizeBy: none
+		sourceColumn: location
+
+		annotation SummarizationSetBy = Automatic
+
+	column email
+		dataType: string
+		lineageTag: f25f623d-13b1-48d3-96dc-5312018633c8
+		summarizeBy: none
+		sourceColumn: email
+
+		annotation SummarizationSetBy = Automatic
+
+	column hireable
+		dataType: string
+		lineageTag: 5fbd0543-e19e-4b0c-abbf-bada9249580d
+		summarizeBy: none
+		sourceColumn: hireable
+
+		annotation SummarizationSetBy = Automatic
+
+	column bio
+		dataType: string
+		lineageTag: b260c22d-6d50-48f3-af62-2d5b23d3f83d
+		summarizeBy: none
+		sourceColumn: bio
+
+		annotation SummarizationSetBy = Automatic
+
+	column twitter_username
+		dataType: string
+		lineageTag: 4cdded28-3c7a-4e68-a04c-bfe9aaf69b21
+		summarizeBy: none
+		sourceColumn: twitter_username
+
+		annotation SummarizationSetBy = Automatic
+
+	column public_repos
+		dataType: int64
+		formatString: 0
+		lineageTag: 6999b9a0-a074-40e4-a3d7-85868a822f36
+		summarizeBy: sum
+		sourceColumn: public_repos
+
+		annotation SummarizationSetBy = Automatic
+
+	column public_gists
+		dataType: int64
+		formatString: 0
+		lineageTag: 8b12e873-7f3d-4907-b90c-8174bc5fdff1
+		summarizeBy: sum
+		sourceColumn: public_gists
+
+		annotation SummarizationSetBy = Automatic
+
+	column followers
+		dataType: int64
+		formatString: 0
+		lineageTag: 6f909861-bd78-431f-a50f-b5568b62211b
+		summarizeBy: sum
+		sourceColumn: followers
+
+		annotation SummarizationSetBy = Automatic
+
+	column following
+		dataType: int64
+		formatString: 0
+		lineageTag: 7ec5819c-0b29-4c20-bd7e-60785e92a085
+		summarizeBy: sum
+		sourceColumn: following
+
+		annotation SummarizationSetBy = Automatic
+
+	column created_at
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: b7897291-1c94-47bc-a0f2-73885eda7398
+		summarizeBy: none
+		sourceColumn: created_at
+
+		variation Variation
+			isDefault
+			relationship: 9cdae2b0-3df7-4f27-acfe-89f25f4fe201
+			defaultHierarchy: LocalDateTable_93c76ddb-2672-4e81-bf0f-d3aac1659999.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column updated_at
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: e8b00189-8e6c-4dc8-be1f-c3762d23345c
+		summarizeBy: none
+		sourceColumn: updated_at
+
+		variation Variation
+			isDefault
+			relationship: ed5d6b51-c7f1-4521-a939-322aa187137b
+			defaultHierarchy: LocalDateTable_44562f3a-7183-45da-84ea-7ba9c7620554.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	partition divyanshpatidar85 = m
+		mode: import
+		source =
+				let
+				    Source = Json.Document(Web.Contents("https://api.github.com/users/divyanshpatidar85")),
+				    #"Converted to Table" = Table.FromRecords({Source}),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Converted to Table",{{"login", type text}, {"id", Int64.Type}, {"node_id", type text}, {"avatar_url", type text}, {"gravatar_id", type text}, {"url", type text}, {"html_url", type text}, {"followers_url", type text}, {"following_url", type text}, {"gists_url", type text}, {"starred_url", type text}, {"subscriptions_url", type text}, {"organizations_url", type text}, {"repos_url", type text}, {"events_url", type text}, {"received_events_url", type text}, {"type", type text}, {"user_view_type", type text}, {"site_admin", type logical}, {"name", type text}, {"company", type text}, {"blog", type text}, {"location", type text}, {"email", type any}, {"hireable", type any}, {"bio", type text}, {"twitter_username", type any}, {"public_repos", Int64.Type}, {"public_gists", Int64.Type}, {"followers", Int64.Type}, {"following", Int64.Type}, {"created_at", type datetime}, {"updated_at", type datetime}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

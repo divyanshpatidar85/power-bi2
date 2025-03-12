@@ -3,3 +3,13 @@ relationship c7d723d0-ce62-412d-9e3e-7074351f547f
 	fromColumn: sales_data_sample.ORDERDATE
 	toColumn: LocalDateTable_71a209ff-1b17-4320-b3db-90e5442ca32b.Date
 
+relationship 9cdae2b0-3df7-4f27-acfe-89f25f4fe201
+	joinOnDateBehavior: datePartOnly
+	fromColumn: divyanshpatidar85.created_at
+	toColumn: LocalDateTable_93c76ddb-2672-4e81-bf0f-d3aac1659999.Date
+
+relationship ed5d6b51-c7f1-4521-a939-322aa187137b
+	joinOnDateBehavior: datePartOnly
+	fromColumn: divyanshpatidar85.updated_at
+	toColumn: LocalDateTable_44562f3a-7183-45da-84ea-7ba9c7620554.Date
+
