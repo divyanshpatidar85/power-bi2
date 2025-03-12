@@ -1,0 +1,68 @@
+table Query1
+	lineageTag: 50771805-db53-47e1-b29a-1a22f43b3f12
+
+	column Dates
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 58cd6c16-8f5c-4454-a323-6858f2a0956c
+		summarizeBy: none
+		sourceColumn: Dates
+
+		variation Variation
+			isDefault
+			relationship: d31e351a-cccb-4801-a67a-05f4cae7d0e5
+			defaultHierarchy: LocalDateTable_3f27c1a4-92be-46a0-9b18-67ca2141d425.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Year
+		dataType: int64
+		formatString: 0
+		lineageTag: 2d337aa2-f099-4daa-bb78-ac790389d5bf
+		summarizeBy: sum
+		sourceColumn: Year
+
+		annotation SummarizationSetBy = Automatic
+
+	column Month
+		dataType: int64
+		formatString: 0
+		lineageTag: b99a4f51-b412-425b-8ee2-0cf70a64b2d0
+		summarizeBy: sum
+		sourceColumn: Month
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Month Name'
+		dataType: string
+		lineageTag: dcbfbcc6-a3aa-471e-a533-69cc3fe5572f
+		summarizeBy: none
+		sourceColumn: Month Name
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Query1 = m
+		mode: import
+		source = ```
+				let
+				    Source = List.Dates(
+				    List.Min(#"sales_data_sample"[ORDERDATE]), 
+				    Duration.Days(List.Max(#"sales_data_sample"[ORDERDATE]) - List.Min(#"sales_data_sample"[ORDERDATE])) + 1, 
+				    #duration(1,0,0,0)
+				),
+				    #"Converted to Table" = Table.FromList(Source, Splitter.SplitByNothing(), null, null, ExtraValues.Error),
+				    #"Renamed Columns" = Table.RenameColumns(#"Converted to Table",{{"Column1", "Dates"}}),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Renamed Columns",{{"Dates", type date}}),
+				    #"Inserted Year" = Table.AddColumn(#"Changed Type", "Year", each Date.Year([Dates]), Int64.Type),
+				    #"Inserted Month" = Table.AddColumn(#"Inserted Year", "Month", each Date.Month([Dates]), Int64.Type),
+				    #"Inserted Month Name" = Table.AddColumn(#"Inserted Month", "Month Name", each Date.MonthName([Dates]), type text)
+				in
+				    #"Inserted Month Name"
+				```
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

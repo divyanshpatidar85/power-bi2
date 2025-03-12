@@ -3,3 +3,8 @@ relationship c7d723d0-ce62-412d-9e3e-7074351f547f
 	fromColumn: sales_data_sample.ORDERDATE
 	toColumn: LocalDateTable_71a209ff-1b17-4320-b3db-90e5442ca32b.Date
 
+relationship d31e351a-cccb-4801-a67a-05f4cae7d0e5
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Query1.Dates
+	toColumn: LocalDateTable_3f27c1a4-92be-46a0-9b18-67ca2141d425.Date
+
